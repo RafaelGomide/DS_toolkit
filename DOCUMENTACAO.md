@@ -111,89 +111,89 @@ dst.prever_sobrevivencia(cph, df_novos, tempos=[6, 12, 24])
 **1. Ingestão de Dados**
 
 - [`carregar_dados`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#carregar_dados) — Carrega um arquivo de dados detectando o formato pela extensão
-- [`carregar_multiplos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#carregarmultiplos) — Lê todos os arquivos que casam com um padrão glob e concatena em um único DataFrame
-- [`carregar_sql`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#carregarsql) — Executa uma query SQL e retorna DataFrame
-- [`carregar_api`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#carregarapi) — Consome uma API REST (GET) com retry automático e devolve DataFrame
-- [`salvar_dados`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#salvardados) — Salva um DataFrame no formato deduzido pela extensão do caminho
+- [`carregar_multiplos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#carregar_multiplos) — Lê todos os arquivos que casam com um padrão glob e concatena em um único DataFrame
+- [`carregar_sql`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#carregar_sql) — Executa uma query SQL e retorna DataFrame
+- [`carregar_api`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#carregar_api) — Consome uma API REST (GET) com retry automático e devolve DataFrame
+- [`salvar_dados`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#salvar_dados) — Salva um DataFrame no formato deduzido pela extensão do caminho
 
 **2. ETL — Limpeza e Transformação**
 
-- [`relatorio_qualidade`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#relatorioqualidade) — Gera um diagnóstico completo de qualidade dos dados, coluna a coluna
-- [`limpar_nomes_colunas`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#limparnomescolunas) — Padroniza nomes de colunas: remove acentos, espaços e caracteres especiais
-- [`converter_tipos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#convertertipos) — Converte tipos de colunas de forma robusta, com foco em dados brasileiros
-- [`tratar_nulos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#tratarnulos) — Trata valores nulos com a estratégia escolhida
-- [`tratar_duplicados`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#tratarduplicados) — Remove linhas duplicadas com relatório do que foi removido
-- [`remover_outliers`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#removeroutliers) — Detecta e trata outliers em colunas numéricas
-- [`otimizar_memoria`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#otimizarmemoria) — Reduz o uso de memória do DataFrame com downcast de tipos
-- [`codificar_categoricas`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#codificarcategoricas) — Codifica variáveis categóricas para uso em modelos
+- [`relatorio_qualidade`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#relatorio_qualidade) — Gera um diagnóstico completo de qualidade dos dados, coluna a coluna
+- [`limpar_nomes_colunas`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#limpar_nomes_colunas) — Padroniza nomes de colunas: remove acentos, espaços e caracteres especiais
+- [`converter_tipos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#converter_tipos) — Converte tipos de colunas de forma robusta, com foco em dados brasileiros
+- [`tratar_nulos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#tratar_nulos) — Trata valores nulos com a estratégia escolhida
+- [`tratar_duplicados`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#tratar_duplicados) — Remove linhas duplicadas com relatório do que foi removido
+- [`remover_outliers`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#remover_outliers) — Detecta e trata outliers em colunas numéricas
+- [`otimizar_memoria`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#otimizar_memoria) — Reduz o uso de memória do DataFrame com downcast de tipos
+- [`codificar_categoricas`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#codificar_categoricas) — Codifica variáveis categóricas para uso em modelos
 - [`escalar`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#escalar) — Escala/transforma colunas numéricas e retorna também o scaler ajustado
-- [`criar_features_data`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#criarfeaturesdata) — Extrai features de uma coluna datetime (feature engineering temporal)
-- [`padronizar_texto`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#padronizartexto) — Padroniza VALORES de colunas de texto (não os nomes — p/ isso use
-- [`criar_faixas`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#criarfaixas) — Discretiza uma variável numérica em faixas (binning)
-- [`mesclar_seguro`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#mesclarseguro) — Merge com diagnóstico completo — o antídoto contra joins silenciosamente errados
+- [`criar_features_data`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#criar_features_data) — Extrai features de uma coluna datetime (feature engineering temporal)
+- [`padronizar_texto`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#padronizar_texto) — Padroniza VALORES de colunas de texto (não os nomes — p/ isso use
+- [`criar_faixas`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#criar_faixas) — Discretiza uma variável numérica em faixas (binning)
+- [`mesclar_seguro`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#mesclar_seguro) — Merge com diagnóstico completo — o antídoto contra joins silenciosamente errados
 
 **3. EDA — Análise Exploratória**
 
-- [`resumo_geral`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#resumogeral) — Describe turbinado: estatísticas + assimetria, curtose, CV e nulos
-- [`analise_correlacao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#analisecorrelacao) — Matriz de correlação + relatório dos pares mais correlacionados
-- [`testar_normalidade`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#testarnormalidade) — Testa normalidade com Shapiro-Wilk, D'Agostino e Kolmogorov-Smirnov
-- [`comparar_grupos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#comparargrupos) — Compara uma variável numérica entre grupos escolhendo o teste correto
-- [`analise_categorica`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#analisecategorica) — Associação entre duas variáveis categóricas: qui-quadrado + Cramér's V
-- [`analise_univariada`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#analiseunivariada) — Perfil completo de uma única coluna, numérica ou categórica
-- [`analise_alvo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#analisealvo) — Ranqueia TODAS as features pela força de associação com o alvo,
+- [`resumo_geral`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#resumo_geral) — Describe turbinado: estatísticas + assimetria, curtose, CV e nulos
+- [`analise_correlacao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#analise_correlacao) — Matriz de correlação + relatório dos pares mais correlacionados
+- [`testar_normalidade`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#testar_normalidade) — Testa normalidade com Shapiro-Wilk, D'Agostino e Kolmogorov-Smirnov
+- [`comparar_grupos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#comparar_grupos) — Compara uma variável numérica entre grupos escolhendo o teste correto
+- [`analise_categorica`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#analise_categorica) — Associação entre duas variáveis categóricas: qui-quadrado + Cramér's V
+- [`analise_univariada`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#analise_univariada) — Perfil completo de uma única coluna, numérica ou categórica
+- [`analise_alvo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#analise_alvo) — Ranqueia TODAS as features pela força de associação com o alvo,
 
 **4. Gráficos**
 
-- [`configurar_estilo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#configurarestilo) — Configura o estilo global de todos os plots do módulo (e do notebook)
-- [`plot_distribuicao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plotdistribuicao) — Histograma + KDE + boxplot alinhados — visão completa de uma numérica
-- [`plot_correlacao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plotcorrelacao) — Heatmap de correlação com máscara triangular (sem redundância visual)
-- [`plot_categorico`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plotcategorico) — Gráfico de barras de contagem com % anotada e limite de categorias
-- [`plot_dispersao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plotdispersao) — Dispersão com linha de tendência e correlação anotada no título
-- [`plot_boxplots_grupo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plotboxplotsgrupo) — Boxplots de uma numérica por grupo, ordenados pela mediana
-- [`plot_serie_temporal`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plotserietemporal) — Linha temporal com reamostragem e média móvel opcionais
-- [`plot_nulos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plotnulos) — Barra horizontal com % de nulos por coluna (visão rápida de faltantes)
-- [`plot_qq`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plotqq) — QQ-plot contra a normal — o complemento visual de `testar_normalidade`
-- [`plot_pares`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plotpares) — Pairplot (matriz de dispersões) com amostragem automática
+- [`configurar_estilo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#configurar_estilo) — Configura o estilo global de todos os plots do módulo (e do notebook)
+- [`plot_distribuicao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plot_distribuicao) — Histograma + KDE + boxplot alinhados — visão completa de uma numérica
+- [`plot_correlacao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plot_correlacao) — Heatmap de correlação com máscara triangular (sem redundância visual)
+- [`plot_categorico`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plot_categorico) — Gráfico de barras de contagem com % anotada e limite de categorias
+- [`plot_dispersao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plot_dispersao) — Dispersão com linha de tendência e correlação anotada no título
+- [`plot_boxplots_grupo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plot_boxplots_grupo) — Boxplots de uma numérica por grupo, ordenados pela mediana
+- [`plot_serie_temporal`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plot_serie_temporal) — Linha temporal com reamostragem e média móvel opcionais
+- [`plot_nulos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plot_nulos) — Barra horizontal com % de nulos por coluna (visão rápida de faltantes)
+- [`plot_qq`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plot_qq) — QQ-plot contra a normal — o complemento visual de `testar_normalidade`
+- [`plot_pares`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#plot_pares) — Pairplot (matriz de dispersões) com amostragem automática
 
 **5. Machine Learning**
 
-- [`preparar_dados`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#preparardados) — Separa X/y e faz train/test split com estratificação inteligente
-- [`pipeline_preprocessamento`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#pipelinepreprocessamento) — Monta um ColumnTransformer sklearn com imputação + escala + one-hot
-- [`avaliar_classificacao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#avaliarclassificacao) — Avaliação completa de um classificador já treinado
-- [`avaliar_regressao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#avaliarregressao) — Avaliação completa de um regressor já treinado
-- [`comparar_modelos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#compararmodelos) — Compara vários modelos baseline via validação cruzada
-- [`otimizar_hiperparametros`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#otimizarhiperparametros) — Busca de hiperparâmetros com GridSearchCV ou RandomizedSearchCV
-- [`importancia_features`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#importanciafeatures) — Ranking de importância de features de um modelo treinado
-- [`avaliar_clustering`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#avaliarclustering) — Ajuda a escolher o k do KMeans: inércia (elbow) + silhouette por k
-- [`salvar_modelo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#salvarmodelo) — Persiste um modelo (ou pipeline) com joblib + metadados opcionais
-- [`carregar_modelo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#carregarmodelo) — Carrega modelo salvo com `salvar_modelo` e avisa se a versão do
-- [`curva_aprendizado`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#curvaaprendizado) — Curva de aprendizado — diagnostica overfitting vs underfitting
-- [`selecionar_features`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#selecionarfeatures) — Seleciona as k melhores features (exige X totalmente numérico e sem nulos)
-- [`reduzir_dimensionalidade`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#reduzirdimensionalidade) — PCA com relatório de variância explicada
-- [`balancear_classes`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#balancearclasses) — Balanceia classes por reamostragem simples (sem dependência do imblearn)
+- [`preparar_dados`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#preparar_dados) — Separa X/y e faz train/test split com estratificação inteligente
+- [`pipeline_preprocessamento`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#pipeline_preprocessamento) — Monta um ColumnTransformer sklearn com imputação + escala + one-hot
+- [`avaliar_classificacao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#avaliar_classificacao) — Avaliação completa de um classificador já treinado
+- [`avaliar_regressao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#avaliar_regressao) — Avaliação completa de um regressor já treinado
+- [`comparar_modelos`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#comparar_modelos) — Compara vários modelos baseline via validação cruzada
+- [`otimizar_hiperparametros`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#otimizar_hiperparametros) — Busca de hiperparâmetros com GridSearchCV ou RandomizedSearchCV
+- [`importancia_features`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#importancia_features) — Ranking de importância de features de um modelo treinado
+- [`avaliar_clustering`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#avaliar_clustering) — Ajuda a escolher o k do KMeans: inércia (elbow) + silhouette por k
+- [`salvar_modelo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#salvar_modelo) — Persiste um modelo (ou pipeline) com joblib + metadados opcionais
+- [`carregar_modelo`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#carregar_modelo) — Carrega modelo salvo com `salvar_modelo` e avisa se a versão do
+- [`curva_aprendizado`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#curva_aprendizado) — Curva de aprendizado — diagnostica overfitting vs underfitting
+- [`selecionar_features`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#selecionar_features) — Seleciona as k melhores features (exige X totalmente numérico e sem nulos)
+- [`reduzir_dimensionalidade`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#reduzir_dimensionalidade) — PCA com relatório de variância explicada
+- [`balancear_classes`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#balancear_classes) — Balanceia classes por reamostragem simples (sem dependência do imblearn)
 
 **6. Matemática / Estatística**
 
-- [`intervalo_confianca`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#intervaloconfianca) — Intervalo de confiança para média (t de Student), proporção (Wilson)
-- [`bootstrap_estatistica`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#bootstrapestatistica) — IC bootstrap (percentil) para QUALQUER estatística que você definir
-- [`tamanho_amostra`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#tamanhoamostra) — Calcula o n mínimo para estimar média ou proporção com a margem de
-- [`teste_ab`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#testeab) — Análise completa de um teste A/B de proporções (conversão)
-- [`correlacao_com_p`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#correlacaocomp) — Todos os pares de correlação COM p-valor — o que `df.corr()` não dá
-- [`calcular_vif`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#calcularvif) — VIF (Variance Inflation Factor) — diagnóstico de multicolinearidade
-- [`ajustar_distribuicao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#ajustardistribuicao) — Ajusta várias distribuições teóricas aos dados e ranqueia pelo
-- [`estatisticas_robustas`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#estatisticasrobustas) — Estatísticas resistentes a outliers, lado a lado com as clássicas
-- [`derivada_numerica`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#derivadanumerica) — Derivada numérica de 1ª ou 2ª ordem por diferenças centrais
-- [`integral_numerica`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#integralnumerica) — Integral definida via quadratura adaptativa (scipy.integrate.quad),
+- [`intervalo_confianca`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#intervalo_confianca) — Intervalo de confiança para média (t de Student), proporção (Wilson)
+- [`bootstrap_estatistica`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#bootstrap_estatistica) — IC bootstrap (percentil) para QUALQUER estatística que você definir
+- [`tamanho_amostra`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#tamanho_amostra) — Calcula o n mínimo para estimar média ou proporção com a margem de
+- [`teste_ab`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#teste_ab) — Análise completa de um teste A/B de proporções (conversão)
+- [`correlacao_com_p`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#correlacao_com_p) — Todos os pares de correlação COM p-valor — o que `df.corr()` não dá
+- [`calcular_vif`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#calcular_vif) — VIF (Variance Inflation Factor) — diagnóstico de multicolinearidade
+- [`ajustar_distribuicao`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#ajustar_distribuicao) — Ajusta várias distribuições teóricas aos dados e ranqueia pelo
+- [`estatisticas_robustas`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#estatisticas_robustas) — Estatísticas resistentes a outliers, lado a lado com as clássicas
+- [`derivada_numerica`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#derivada_numerica) — Derivada numérica de 1ª ou 2ª ordem por diferenças centrais
+- [`integral_numerica`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#integral_numerica) — Integral definida via quadratura adaptativa (scipy.integrate.quad),
 
 **7. Análise de Sobrevivência**
 
-- [`preparar_sobrevivencia`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#prepararsobrevivencia) — Valida e padroniza um DataFrame para análise de sobrevivência
-- [`kaplan_meier`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#kaplanmeier) — Curva(s) de Kaplan-Meier com medianas, IC e log-rank automático
-- [`risco_acumulado`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#riscoacumulado) — Risco acumulado de Nelson-Aalen H(t) — o complemento do Kaplan-Meier
-- [`cox_ph`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#coxph) — Regressão de Cox (riscos proporcionais) com relatório interpretado
-- [`cox_lasso`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#coxlasso) — Cox penalizado (LASSO/Elastic-Net) com seleção do penalizador por
-- [`modelos_parametricos_sobrevivencia`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#modelosparametricossobrevivencia) — Ajusta modelos paramétricos de sobrevivência e compara por AIC
-- [`prever_sobrevivencia`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#preversobrevivencia) — Prevê curvas de sobrevivência individuais com um modelo de Cox ajustado
+- [`preparar_sobrevivencia`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#preparar_sobrevivencia) — Valida e padroniza um DataFrame para análise de sobrevivência
+- [`kaplan_meier`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#kaplan_meier) — Curva(s) de Kaplan-Meier com medianas, IC e log-rank automático
+- [`risco_acumulado`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#risco_acumulado) — Risco acumulado de Nelson-Aalen H(t) — o complemento do Kaplan-Meier
+- [`cox_ph`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#cox_ph) — Regressão de Cox (riscos proporcionais) com relatório interpretado
+- [`cox_lasso`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#cox_lasso) — Cox penalizado (LASSO/Elastic-Net) com seleção do penalizador por
+- [`modelos_parametricos_sobrevivencia`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#modelos_parametricos_sobrevivencia) — Ajusta modelos paramétricos de sobrevivência e compara por AIC
+- [`prever_sobrevivencia`](https://github.com/RafaelGomide/DS_toolkit/blob/main/DOCUMENTACAO.md#prever_sobrevivencia) — Prevê curvas de sobrevivência individuais com um modelo de Cox ajustado
 
 ---
 
