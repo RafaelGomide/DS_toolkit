@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Saídas do toolkit
+tmp/
+figs/
+modelos/
+*.joblib
+*.joblib.meta.json
+
+# Dados (não versionar dados de clientes)
+*.csv
+*.xlsx
+*.parquet
+*.feather
+!exemplos/*.csv
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
